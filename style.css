@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Overpass', sans-serif;
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+@media (max-width: 1440px){
+/*rating div*/
+.ratingContent{
+    background: linear-gradient(to top, hsla(213, 19%, 18%, 0.5), hsl(213, 19%, 18%));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    padding: 30px;
+    width: 22vw;
+    height: 23vw;
+    border-radius: 20px;
+}
+.ratingIcon{
+    padding: 15px;
+    border-radius: 40px;
+    background-color: hsla(217, 12%, 63%, 0.05);
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ratingIcon img{
+    width: 18px;
+}
+.ratingContent h1{
+    font-size: 25px;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+.ratingContent p:nth-child(3){
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(217, 12%, 63%);
+    text-align: left;
+}
+.ratingButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.ratingButton button{
+    padding: 15px 19px;
+    border-radius: 40px;
+    background-color: hsla(217, 12%, 63%, 0.05);
+    border: none;
+    color: hsl(217, 12%, 63%);
+}
+.ratingButton button:hover{
+    transition: 1s;
+    background-color: hsla(217, 12%, 63%, 0.311);
+    color: hsl(0, 0%, 100%);
+}
+.ratingButton button:focus{
+    transition: 1s;
+    background-color: hsla(217, 12%, 63%, 0.311);
+    color: hsl(0, 0%, 100%);
+}
+.ratingContent .submit{
+    padding: 15px 0px;
+    border-radius: 40px;
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    color: hsl(0, 0%, 100%);
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+.ratingContent .submit:hover{
+    transition: 0.5s;
+    background-color: hsl(25, 100%, 62%);
+}
+/*thank div*/
+    .thankContent{
+        animation: fadeIn 1s ease-in 0s;
+        background: linear-gradient(to top, hsla(213, 19%, 18%, 0.5), hsl(213, 19%, 18%));
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+        width: 22vw;
+        height: 23vw;
+        border-radius: 20px;
+    }
+    .thankContent img{
+        width: 50%;
+    }
+    .thankContent p:nth-child(2){
+        font-size: 15px;
+        font-weight: 400;
+        color: hsl(25, 97%, 53%);
+        background-color: hsla(216, 12%, 54%, 0.1);
+        padding: 8px 15px;
+        border-radius: 20px;
+    }
+    .thankContent h1{
+        font-size: 25px;
+        font-weight: 700;
+        color: hsl(0, 0%, 100%);
+    }
+    .thankContent p:nth-child(4){
+        font-size: 15px;
+        font-weight: 400;
+        color: hsl(217, 12%, 63%);
+        text-align: center;
+    }
+}
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+@media (max-width: 375px) {
+    .ratingContent{
+        width: 80vw;
+        height: 80vw;
+    }
+    .thankContent{
+        width: 80vw;
+        height: 80vw;
+    }
+}
